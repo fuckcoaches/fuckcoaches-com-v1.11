@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# fuckcoaches.com
+
+**Free AI Coaching. No Courses. No Gurus. No Bullshit.**
+
+## Mission
+
+We're putting an end to paid coaching courses that make creators rich at the expense of their fans. This is a landing page for free AI coaching resources — no upsells, no grifters, no scams.
+
+## Tech Stack
+
+- **Next.js 14** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **React 19**
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+/app
+  - page.tsx          # Main landing page
+  - layout.tsx        # Root layout with metadata
+  - globals.css       # Global styles and animations
 
-## Learn More
+/components
+  - Hero.tsx          # Hero section with CTA
+  - SignupModal.tsx   # Modal with signup form
+  - Button.tsx        # Reusable button component
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Future Integrations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This v1 is frontend-only. Future integrations planned:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Dynamic.xyz** - Web3 authentication
+- **Supabase** - Form data storage
+- **Crypto Payments** - VIP ticket processing
+- **Discord/Telegram** - Auto-invite webhooks
 
-## Deploy on Vercel
+Integration points are marked with comments in the codebase.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✅ Fully responsive design  
+✅ Dark gradient theme with purple/green accents  
+✅ Smooth modal animations  
+✅ Form validation  
+✅ Confirmation state after submission  
+✅ Zero external dependencies (beyond Next.js core)  
+
+## Design Inspiration
+
+Layout and spacing inspired by high-converting event landing pages, optimized for anti-guru positioning.
+
+## License
+
+MIT
+
+---
+
+Built with conviction. Zero tolerance for coaching grifters.
